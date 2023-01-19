@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour
         collisionAction= target.GetComponent<CollisionAction>();
         valueDisplay= displayObject.GetComponent<ValueDisplay>();
         collisionAction.onCllisionEnterAction = UpdateCounter;
+        collisionAction.matchCount = 5;
     }
 
     // Update is called once per frame
